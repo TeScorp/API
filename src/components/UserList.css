@@ -1,0 +1,65 @@
+/* UserList.css */
+
+.user-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.user-card {
+  background-color: #ffffff;/* UserList.css */
+
+  .user-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+    align-items: center; /* Center horizontally */
+    min-height: 100vh; /* Ensure the container takes the full viewport height */
+  }
+  
+  .user-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(68, 66, 66, 0.1);
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+  
+  button {
+    margin-top: 20px;
+  }
+  
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 5px 0;
+}
+.user-card {
+  align-items: center;
+  justify-content: center;
+}
