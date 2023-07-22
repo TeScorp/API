@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import './UserList.css';
 
 const UserList = () => {
   const [listOfUsers, setListOfUsers] = useState([]);
@@ -21,18 +22,14 @@ const UserList = () => {
   };
 
   return (
-    <div style={{ textAlign: 'center' , justifyContent:'center' , alignItems:'center'}}>
+    <div style={{ textAlign: 'center' }}>
       <h1>Users list</h1>
-      {!showList && (
-        <div>
-          <button
-            style={{ color: 'blue', height: '30px', width: '80px' }}
-            onClick={handleShowList}
-          >
-            Show List
-          </button>
-        </div>
-      )}
+      <button
+        style={{ color: 'blue', height: '30px', width: '120px', marginBottom: '20px' }}
+        onClick={handleShowList}
+      >
+        {showList ? 'Hide List' : 'Show List'}
+      </button>
       {showList && (
         <div className="user-card-container">
           {listOfUsers.map(user => (
